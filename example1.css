@@ -1,0 +1,218 @@
+
+CSS
+body {
+    align-items: center;
+    
+    font-family: sans-serif;
+    margin: auto;
+    padding: auto;
+}
+
+header {
+    background-color: #ff0000;
+    padding: 10px;
+}
+
+.logo {
+    width: 20%;
+    height: auto;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+h1 {
+    font-size: autoo;
+    padding: 20px;
+    font-size: 2em;
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+p {
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.slideshow {
+    align-self: auto;
+    float: auto;
+    grid-column: 1 / span 5;
+    width: 1080px;
+    height: 720px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshow img {
+    float: center;
+    flex-direction: column;
+    width: 480px;
+    height: auto;
+    object-fit: cover;
+    display: none;
+}
+
+.slideshow img:first-child {
+    display: block;
+    align-content: center;
+    float: right;
+}
+
+.navigation {
+    grid-column: 1 / span 2;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+header {
+    background-color: #ff0000;
+    padding: 10px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+nav {
+    float: right;
+    align-self: left;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.trapezoid-button {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    transform: skew(-20deg);
+    position: relative;
+}
+
+.trapezoid-button:hover {
+    background-color: #d9534f;
+}
+
+.trapezoid-button a img {
+    width: 20px;
+    height: 20px;
+}
+
+.icon{
+    float: right;
+    max-width: 80px;
+    min-width: 50px;
+    min-height: 80px;
+    max-height: 80px;
+    background-color: red;
+    color: white;
+}
+
+.tinylogo {
+    max-width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 250px;
+    max-width: 250px;
+
+}
+
+/* Footer stuff */
+
+footer {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: auto;
+    margin: 0 10px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #333;
+    text-decoration: none;
+}
+
+.social-media-links {
+    display: flex;
+}
+
+.social-media-links img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.article {
+    width: 80%;
+    height: 60%;
+}
+
+.srcImage img{
+    min-width: min-content;
+    min-height: min-content;
+    
+    max-width: max-content;
+    max-width: max-content;
+}
+
+body > .grid-container > .slideshow {
+    height: 1980px;
+    width: fit-content;
+}
+
+body > .grid-container > .main {
+    height: fit-content;
+    width: fit-content;
+}

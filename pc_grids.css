@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* Grid Styles for Page Body */
+
+body {
+   display: grid;
+   grid-template-columns: 2fr 2fr;
+   grid-template-areas: "header header"
+                        "slideshow slideshow"
+                        "Us logo"
+                        "footer footer";
+   grid-column-gap: 20px;
+}
+
+  body > header {
+   grid-row: 1;
+   grid-column: 1/-1;
+   grid-area: 90%;
+}
+
+
+body > article {grid-area: Logo;}
+body > aside {grid-area: slideshow;}
+body > section {grid-area: fluff;}
+body > footer {grid-area: footer;}
+
+
+
+/* Grid Styles for Nested Grid */
+
+section {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+  }
+  section > h1 {
+   grid-area: 1/2/2/3;
+  }
