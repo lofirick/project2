@@ -10,6 +10,7 @@
 <title>Shoe Showcase | Coo Shoes </title>
     <link rel="stylesheet" href="example1.css">
     <link rel="stylesheet" href="pc_grids.css" >
+    <link rel="stylesheet" href="contact.css" >
 </head>
 <body>
     <header>
@@ -26,20 +27,34 @@
         <img src="logo2.png" alt="Coo shoes Store" class="logo2" >
     </header>
 <body>
-  <h1>Contact Us</h1>
-  <form id="contact-form">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    <br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <br>
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-    <br>
-    <button type="submit">Submit</button>
-  </form>
-  <p id="message-sent"></p>
+    <contact class="contactx">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+        <label for="phoneNumber">Phone #</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <br>
+        <br>
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit" />
+          </div>
+        <br>
+        <br>
+        </form>
+        <p id="message-sent"></p>
+    </contact>
+
   <script src="script.js"></script>
 
   <footer>

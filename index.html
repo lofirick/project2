@@ -2,17 +2,19 @@
 <html
 lang="en">
 <head>   
-<meta
-charset="UTF-8">   
-<meta
-name="viewport"
- 
-content="width=device-width, initial-scale=1.0">
-
+    <meta
+        charset="UTF-8">   
+    <meta
+        name="viewport"
     
-<title>Shoe Showcase | Coo Shoes </title>
+        content="width=device-width, initial-scale=1.0">
+
+        
+    <title>Shoe Showcase | Coo Shoes </title>
     <link rel="stylesheet" href="example1.css">
     <link rel="stylesheet" href="pc_grids.css" >
+    <link rel="stylesheet" href="slideshow.css" >
+
 </head>
 <body>
     <header>
@@ -28,18 +30,39 @@ content="width=device-width, initial-scale=1.0">
         <a href="index.html"><img src="logo.png" alt="[Your Brand Logo]" class="logo"></a>
         <img src="logo2.png" alt="Coo shoes Store" class="logo2" >
     </header>
+    <div id="navtext">
+        <nav>
+            <ul>
+                <li><a href="index.html" alt="Home">
+                    <div class="button-default button-slanted">
+                        <span class="button-slanted-content">Home</span>
+                    </div></a></li>
+                <li><a href="products.html" alt="store">
+                    <div class="button-default button-slanted">
+                        <span class="button-slanted-content">Store</span>
+                    </div>
+                </a></li>
+                <li><a href="aboutUsPage.html" alt="About US">
+                    <div class="button-default button-slanted">
+                        <span class="button-slanted-content">About Us</span>
+                    </div>
+                </a></li>
+                <li><a href="contacts.html" alt="Contact Us">
+                    <div class="button-default button-slanted">
+                        <span class="button-slanted-content">Contact Us</span>
+                    </div>
+                </a></li>
+            </ul>
+        </nav>
+    </div>
 
-    <main class="grid-container">
-        <section class="slideshow">
-            <div>
-                <button onclick="prevSlide()">Previous</button>
-                <button onclick="nextSlide()">Next</button>
-            </div>
-
-            <img src="shoe2.jpg" alt="Shoe 2">
-            <img src="shoe1.jpg" alt="Shoe 1">
-            <img src="shoe3.jpg" alt="Shoe 3">
-        </section>
+    <div id="slideshow">
+        <img src="shoe1.jpg">
+        <a href="contacts.html"><img src="shoe1.jpg" style="display: none"></a>
+        <a href="contacts.html"><img src="shoe2.jpg" style="display: none"></a>
+        <a href="contacts.html"><img src="nike6.jpg" style="display: none"></a>
+        <a href="contacts.html"><img src="nike7.jpg" style="display: none"></a>
+    </div>
     </main>
 
     <footer>
@@ -62,7 +85,7 @@ content="width=device-width, initial-scale=1.0">
             <div class="footer-column">
                 <h3>Legal Links</h3>
                 <ul>
-                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="tos.html">Terms & Conditions</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
             </div>
